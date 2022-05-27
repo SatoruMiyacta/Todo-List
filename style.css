@@ -14,10 +14,14 @@
   align-items: center;
   margin: 20px auto;
 }
-.list {
+.inner {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.todo-input-area {
   display: flex;
   justify-content: center;
-  height: 30px;
   width: 70%;
 }
 .task-form {
@@ -29,36 +33,47 @@
   height: 50px;
   width: 20%;
   margin-left: 30px;
+  border-radius: 7px;
   background-color: rgb(47, 162, 224);
-  border-radius: 7%;
   color: #fff;
 }
-.name {
+.todo-list-area {
   height: 150px;
   width: 60%;
   margin-top: 30px;
+}
+list-form {
+  text-align: left;
+}
+.table-list {
+  background-color: gainsboro;
 }
 .table {
   height: 150px;
   width: 100%;
   border-top: 1px solid #000;
 }
-.edit-form {
-  border-radius: 10%;
+.edit-button {
+  width: 70px;
+  padding: 10px;
+  border: 1px solid #000;
+  border-radius: 5px;
   background: transparent;
   color: #fff;
 }
 .delete {
+  width: 70px;
+  padding: 10px;
+  border-radius: 5px;
   color: #fff;
   background-color: red;
-  border-radius: 10%;
 }
 .footer {
   text-align: center;
   height: 200px;
   width: 100vw;
+  padding-top: 30px;
 }
 small {
   display: block;
-  padding-top: 30px;
 }
