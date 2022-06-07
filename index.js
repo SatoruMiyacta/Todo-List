@@ -147,6 +147,7 @@ const createListView = () => {
         table.removeChild(table.firstChild);
     }
 
+
     // table作成
 
     todos.forEach((todo) => {
@@ -176,10 +177,32 @@ const createListView = () => {
 
     table.appendChild(todoItem);
 
+    // editBtn.addEventListener("click" , evt => {
+    //     evt.preventDefault();
+    //     editTasks(editBtn);
+    // });
+
+    deleteBtn.addEventListener("click" , evt => {
+        evt.preventDefault();
+        deleteTasks(deleteBtn);
+    });
+
     });
 
     
 };
+
+const deleteTasks = (deleteBtn) => {
+    const chosenTask = deleteBtn.closest("tr");
+    table.removeChild(chosenTask);
+};
+
+
+// const editTasks = (editBtn) => {
+//     const chosenTask = deleteBtn.closest("tr");
+//     table.removeChild(chosenTask);
+// };
+
 
 
 
