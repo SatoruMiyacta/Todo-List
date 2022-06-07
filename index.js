@@ -109,7 +109,7 @@ const buttonDelete = document.getElementsByTagName('button')[2];
 let number = 1;
 let todos = [];
 
-// イベント
+// リスト追加
 
 addBtn.addEventListener("click", () => {
 
@@ -127,7 +127,19 @@ addBtn.addEventListener("click", () => {
         title: input.value
     });
 
-    
+    createListView();
+
+    input.value = "";
+    number++;
+
+});
+
+
+
+
+
+const createListView = () => {
+
 
     // タスクを削除
 
@@ -138,8 +150,6 @@ addBtn.addEventListener("click", () => {
     // table作成
 
     todos.forEach((todo) => {
-
-    
 
     const todoItem = document.createElement("tr");
     const todoId = document.createElement("td");
@@ -168,9 +178,11 @@ addBtn.addEventListener("click", () => {
 
     });
 
-    input.value = "";
-    number++;
+    
+};
 
 
 
-});
+
+
+
