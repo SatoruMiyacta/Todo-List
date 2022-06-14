@@ -187,6 +187,7 @@ const createListView = () => {
         deleteTasks(deleteBtn);
     });
 
+
     });
 
     
@@ -196,6 +197,7 @@ const deleteTasks = (deleteBtn) => {
     const chosenTask = deleteBtn.closest("tr");
     table.removeChild(chosenTask);
 };
+
 
 
 // const editTasks = (editBtn) => {
