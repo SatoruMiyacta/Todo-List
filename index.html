@@ -14,12 +14,17 @@
       <div class="inner">
         <h1 class="title">Todo-List</h1>
         <div class="todo-input-area flex jc-sb">
-          <input type="text" id="input" class="form" placeholder="Todo List" />
+          <input
+            type="text"
+            id="text-input"
+            class="form"
+            placeholder="Todo List"
+          />
           <button class="c-btn primary">Add Task</button>
         </div>
 
         <div class="todo-list-area">
-          <table>
+          <table class="table-list">
             <thead>
               <tr>
                 <th class="no">#</th>
@@ -32,7 +37,9 @@
               <tr>
                 <td>1</td>
                 <td>Todo List作ってみました。遊んでみてください。</td>
-                <td><button class="c-btn">Edit</button></td>
+                <td>
+                  <button class="c-btn">Edit</button>
+                </td>
                 <td><button class="c-btn secondary">Delete</button></td>
               </tr>
             </tbody>
