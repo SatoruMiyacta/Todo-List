@@ -6,45 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Todo List</title>
     <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./common.css" />
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <header class="header">
-      <h1 class="title">Todo-List</h1>
-    </header>
-
     <main>
-      <div class="div-wrapper">
-        <div class="todo-input-area">
-          <input type="text" placeholder="Todo List" class="task-form" />
-          <button type="button" class="task-button">Add Task</button>
+      <div class="inner">
+        <h1 class="title">Todo-List</h1>
+        <div class="todo-input-area flex jc-sb">
+          <input type="text" id="input" class="form" placeholder="Todo List" />
+          <button class="c-btn primary">Add Task</button>
         </div>
 
         <div class="todo-list-area">
-          <table class="table">
-            <tr>
-              <td># Name</td>
-              <td class="list-form">Edit</td>
-              <td class="list-form">Delete</td>
-            </tr>
-            <tr class="table-list">
-              <td>1 Todo List作ってみました。遊んでみてください。</td>
-              <td class="list-form">
-                <button type="button" class="edit-button">Edit</button>
-              </td>
-              <td class="list-form">
-                <button type="button" class="delete">Delete</button>
-              </td>
-            </tr>
+          <table>
+            <thead>
+              <tr>
+                <th class="no">#</th>
+                <th class="name">Name</th>
+                <th class="edit">Edit</th>
+                <th class="delete">Delete</th>
+              </tr>
+            </thead>
+            <tbody class="add-list">
+              <tr>
+                <td>1</td>
+                <td>Todo List作ってみました。遊んでみてください。</td>
+                <td><button class="c-btn">Edit</button></td>
+                <td><button class="c-btn secondary">Delete</button></td>
+              </tr>
+            </tbody>
           </table>
         </div>
       </div>
     </main>
 
     <footer class="footer">
-      <p>
+      <p class="copyright">
         <small>Copyright©︎2017todo.Lara-bell.com All Rights Reserved.</small>
       </p>
     </footer>
+    <script src="./index.js"></script>
   </body>
 </html>
